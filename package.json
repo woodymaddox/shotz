@@ -1,0 +1,21 @@
+{
+  "name": "shotz",
+  "version": "1.0.0",
+  "description": "shotz",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production --module-bind js=babel-loader"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woodymaddox/shotz.git"
+  },
+  "keywords": [],
+  "author": "Woody Maddox",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/woodymaddox/shotz/issues"
+  },
+  "homepage": "https://github.com/woodymaddox/shotz#readme"
+}
