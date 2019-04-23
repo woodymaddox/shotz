@@ -7,7 +7,16 @@ let locations = [];
 const domStringBuilder = () => {
   let domString = '';
   locations.forEach((location) => {
-    domString += `<h3>${location.name}</h3>`;
+    domString += `<div id=${location.id} class="card location col-2">`;
+    domString += '<div class="card">';
+    domString += '<div class="card-header">Card Title';
+    domString += `<h5>${location.name}</h5>`;
+    domString += `<h5>${location.address}</h5>`;
+    domString += `<div class="image"><img src=${location.imageUrl} style="width:70%"></div>`;
+    domString += '</div>';
+    domString += '</div>';
+    domString += '</div>';
+    domString += '</div>';
   });
   util.printToDom('locations', domString);
 };
